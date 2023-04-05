@@ -1,0 +1,74 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+  body {
+    color: white;
+    background: black;
+  }
+}
+
+/* Navigation Bar */
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+header {
+  background: rgb(49, 50, 52);
+  padding: 1em 0;
+}
+a.logo, link.logo {
+  font-weight: bold;
+  font-size: 18px;
+}
+nav {
+  float: right;
+}
+ul.nav {
+  list-style-type: none;
+  margin: 0;
+  display: flex;
+}
+li a, li link{
+  padding: 1em;
+}
+li a:hover, li link:hover{
+  background-color: rgb(103, 105, 107);
+}
+
+/* Profile */
+label{
+  text-align: right;
+}
+ul.reviews{
+  list-style-type: none;
+}
+li.reviews{
+  margin-bottom: 10px;
+  margin-left: 550px;
+  margin-right: 550px;
+  padding-bottom: 10px;
+  padding-top: 5px;
+  background-color: blueviolet;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
